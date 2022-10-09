@@ -1,0 +1,50 @@
+<%- include ('partials/_header') %>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5 offset-md-3 card">
+      <div class="card-body">
+        <form action="/update/<%= data.id %>" method="POST">
+          <div class="form-group">
+            <input type="text" name="nombre" value="<%= data.nombre%>" placeholder="Nombre" class="form-control" autofocus>
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" name="edad" value="<%= data.edad%>" placeholder="Edad" class="form-control">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" name="nacionalidad" value="<%= data.nacionalidad%>" placeholder="Nacionalidad" class="form-control">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" name="altura" value="<%= data.altura%>" placeholder="Altura" class="form-control">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" name="peso" value="<%= data.peso%>" placeholder="Peso" class="form-control">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" name="liga" value="<%= data.liga%>" placeholder="Liga" class="form-control">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" name="posicion" value="<%= data.posicion%>" placeholder="Posicion" class="form-control">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" name="club" value="<%= data.club%>" placeholder="Club" class="form-control">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">
+            Guardar jugador
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%- include ('partials/_footer') %>
