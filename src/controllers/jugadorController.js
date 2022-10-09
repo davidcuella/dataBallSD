@@ -2,7 +2,7 @@ const controller = {};
 //tabla jugador
 controller.list = (req, res) => {
   req.getConnection((err, conn) => {
-    conn.query('SELECT * FROM databall.jugador', (err, jugadores) => {
+    conn.query('SELECT * FROM quesofresco_databall.jugador', (err, jugadores) => {
      if (err) {
       res.json(err);
      }
