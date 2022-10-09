@@ -17,11 +17,11 @@ app.set('view engine', 'ejs');
 // middlewares
 app.use(morgan('dev'));
 app.use(myConnection(mysql, {
-  host: 'localhost',
-  user: 'root',
-  password: 'password',
+  host: 'mysql-quesofresco.alwaysdata.net',
+  user: '283619_free',
+  password: 'contrasenasinletras1234',
   port: 3306,
-  database: 'databall'
+  database: 'quesofresco_databall'
 }, 'single'));
 app.use(express.urlencoded({extended: false}));
 
